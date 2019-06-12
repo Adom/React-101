@@ -8,8 +8,8 @@
     <main id="react-container">Loading...</main>
     <div style="text-align: center; margin-top: 30px;">&copy; YourAwesomeDevCo</div>
     <!-- Script tags below body to ensure page has loaded before scripts initialize -->
-    <script>
-      const HelloWorld = React.createElement('div', { style: { textAlign: 'center' } }, 'Hello world!');
+    <script type="text/babel">
+      const HelloWorld = <div style={{ textAlign: 'center' }}>Hello world!</div>;
       ReactDOM.render(
         HelloWorld,
         document.getElementById('react-container')
